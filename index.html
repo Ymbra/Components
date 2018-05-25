@@ -31,17 +31,33 @@
 					<h1>INTEGRANDO COMPONENTES</br>EN LA EDICIÓN DE CONTENIDOS</h1>
 				</section>
 
+				<section class="dcamp">
+					<table>
+							<thead>
+								<tr>
+									<th>CARLES TARRÉS</th>
+									<th>CRISTINA CHUMILLAS</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>TW. @Catac0</td>
+									<td>TW. @chumillas</td>
+								</tr>
+								<tr>
+									<td>DRUPAL. @ctarres</td>
+									<td>DRUPAL. @ckrina</td>
+								</tr>
+							</tbody>
+						</table>
+				</section>
+
 
 				<!-- Index-->
 				<section class="dcamp">
 					<ul>
-						<li>Problemática
-							<ul>
-								<li>La realidad actual</li>
-								<li>Los componentes</li>
-							</ul>
-						</li>
-						<li>Soluciones
+						<li>PROBLEMÁTICA</li>
+						<li>SOLUCIONES
 							<ul>
 								<li>Paragraph</li>
 								<li>Pattern UI</li>
@@ -57,6 +73,31 @@
 					<section data-background="#2d4084">
 						<h2>Problemática</h2>
 					</section>
+
+					<!-- Expectativas -->
+					<section>
+						<h3>#1 Expectativas</h3>
+					</section>
+					<section data-background="img/problem-1a.gif"></section>
+					<section>
+						<style>.header1 header.dcamp { display: none; }</style>
+						<img data-src="img/problem-1b.png" />
+					</section>
+
+					<!-- Capacidades -->
+					<section>
+						<h3>#2 Capacidades</h3>
+					</section>
+					<section>
+						<style>.header1 header.dcamp { display: none; }</style>
+						<img data-src="img/problem-2a.jpg" />
+					</section>
+					<section>
+						<style>.header1 header.dcamp { display: none; }</style>
+						<img data-src="img/problem-2a.jpg" />
+					</section>
+
+					<!-- Resumen -->
 					<section class="dcamp">
 						<h3>La realidad actual</h3>
 						<ul>
@@ -217,14 +258,18 @@
 						<h2>UI Patterns</h2>
 					</section>
 
+					<!-- Qué es -->
 					<section>
 						</br>
 						<h3>¿Qué es?</h3>
 						<ul>
 							<li>Permite a los desarrolladores definir componentes independientes y usarlos en la construcción de páginas.</li>
+							<li>Permite usar librería frontend externas como Fractal o Pattern Lab</li>
+							<li>Permite a los _sitebuilders_ reusar esos componentes como templates para Fieldgroups, views, Display Suite...</li>
 						</ul>
 					</section>
 
+					<!-- Cómo funciona - mapa -->
 					<section><img data-src="img/uip-overview.png" /></section>
 					<!-- Recursos -->
 					<section>Documentación: http://ui-patterns.readthedocs.io/en/8.x-1.x/</section>
@@ -361,6 +406,12 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
