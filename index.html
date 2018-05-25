@@ -54,7 +54,9 @@
 
 				<!-- Problemática-->
 				<section>
-					<section><h2>Problemática</h2></section>
+					<section data-background="#2d4084">
+						<h2>Problemática</h2>
+					</section>
 					<section class="dcamp">
 						<h3>La realidad actual</h3>
 						<ul>
@@ -68,27 +70,51 @@
 
 				<!-- Los componentes-->
 				<section>
-					<section class="dcamp">
-						</br>
+					<section data-background="#2d4084">
 						<h2>Los componentes</h2>
-						<img width="60%" data-src="img/drake-joke.png" />
+						<!--<img width="60%" data-src="img/drake-joke.png" />-->
 					</section>
 					<!-- Los componentes - que son-->
-					<section data-background="bg-dcamp.png">
+					<section data-background-transition="none">
 						</br>
-						<h3>¿Qué son?</h3>
+						<img data-src="img/comp-cta.png" />
+						<pre><code class="hljs">
+  &lt;div class="cta"&gt;
+	&lt;h3 class="cta__title"&gt;Become a member&lt;/h3&gt;
+	&lt;p class="cta__text"&gt;Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus...&lt;/p&gt;
+	&lt;a class="cta__link"&gt;Membership&lt;/a&gt;
+  &lt;/div&gt;
+						</code></pre>
+					</section>
+					<!-- Los componentes - que son - composición-->
+					<section data-background-transition="none"><img data-src="img/comp-cta-composition.png" style="max-height: 600px;" /></section>
+
+					<!-- Los componentes - que son - variaciones-->
+					<section data-background-transition="none">
+						</br>
+						<img data-src="img/comp-cta-modified.png" />
+						<pre><code class="hljs">
+  &lt;div class="cta--red"&gt;
+	&lt;h3 class="cta__title"&gt;Become a member&lt;/h3&gt;
+	&lt;p class="cta__text"&gt;Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus...&lt;/p&gt;
+	&lt;a class="cta__link"&gt;Membership&lt;/a&gt;
+  &lt;/div&gt;
+						</code></pre>
 					</section>
 
 					<!-- Soluciones-->
-					<section data-background="bg-dcamp.png">
-						</br>
-						<h2>Soluciones</h2>
+					<section data-background="#2d4084">
+						<h2>Soluciones</br>
+							para la administración de Drupal
+						</h2>
 					</section>
 				</section>
 
 				<!-- Paragraph -->
 				<section>
-					<section>Paragraph</section>
+					<section data-background="#2d4084">
+						<h2>Paragraph</h2>
+					</section>
 					<!-- Paragraph que es-->
 					<section>
 						</br>
@@ -187,7 +213,21 @@
 
 				<!-- UI Patterns -->
 				<section>
-					<section>UI Patterns</section>
+					<section data-background="#2d4084">
+						<h2>UI Patterns</h2>
+					</section>
+
+					<section>
+						</br>
+						<h3>¿Qué es?</h3>
+						<ul>
+							<li>Permite a los desarrolladores definir componentes independientes y usarlos en la construcción de páginas.</li>
+						</ul>
+					</section>
+
+					<section><img data-src="img/uip-overview.png" /></section>
+					<!-- Recursos -->
+					<section>Documentación: http://ui-patterns.readthedocs.io/en/8.x-1.x/</section>
 				</section>
 
 				<!-- Bricks -->
