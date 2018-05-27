@@ -246,14 +246,78 @@
 						</br>
 						<h3>¿Qué es?</h3>
 						<ul>
-							<li>Permite a los desarrolladores definir componentes independientes y usarlos en la construcción de páginas.</li>
-							<li>Permite usar librería frontend externas como Fractal o Pattern Lab</li>
-							<li>Permite a los _sitebuilders_ reusar esos componentes como templates para Fieldgroups, views, Display Suite...</li>
+							<li>Desarrolladores definen componentes</li>
+							<li>Uso librerías frontend externas</li>
+							<li>Uso en Fieldgroups, views, Display Suite... por <em>sitebuilders</em></li>
 						</ul>
+						<aside class="notes">
+							<ul>
+								<li>Permite a los desarrolladores definir componentes independientes (de la estructura de datos de Drupal) para usarlos en la construcción de páginas.</li>
+								<li>Permite usar librería frontend externas como Fractal o Pattern Lab</li>
+								<li>Permite a los _sitebuilders_ reusar esos componentes como templates para Fieldgroups, views, Display Suite...</li>
+							</ul>
+						</aside>
 					</section>
 
 					<!-- Cómo funciona - mapa -->
 					<section><img data-src="img/uip-overview.png" /></section>
+
+					<!-- Cómo funciona - definición -->
+					<section>
+						<code>PATTERNAME.ui_patterns.yml</code>
+						<pre><code class="hljs">hero:
+label: Hero
+description: A hero that contains some text, an image and a link.
+fields:
+  title:
+    type: text
+    label: Heading
+    description: Card heading.
+    preview: A Card Heading.
+  body:
+    type: text
+    label: Body
+    description: Card body text.
+    preview: This is a great card body – it has a ton of information in it!
+  image:
+    type: text
+    label: Image
+    description: The card image.
+    preview: http://via.placeholder.com/350x350
+								</code></pre>
+							</section>
+					<!-- Cómo funciona - definición 2 -->
+					<section>
+						<code>pattern-PATTERNNAME.html.twig</code>
+						<pre><code class="hljs" style="max-height: 500px;">
+ &lt;div class="hero"&gt;
+  {% if title %}
+      <h3>{{ title }}</h3>
+  {% endif %}
+
+  {% if body %}
+      {{ body }}
+  {% endif %}
+
+  {% if image %}
+      &lt;img src="https://www.hook42.com/%7B%7Bimage%7D%7D" /&gt;
+  {% endif %}
+ &lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>Component Hero</h3>
+						<pre><code class="hljs" style="max-height: 500px;">
+ /customtheme/
+    components/
+        hero/
+            hero.scss
+            hero.js
+            hero.ui_patterns.yml
+            pattern-hero.html.twig
+						</code></pre>
+					</section>
 					<!-- Recursos -->
 					<section>Documentación: http://ui-patterns.readthedocs.io/en/8.x-1.x/</section>
 				</section>
