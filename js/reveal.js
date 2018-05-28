@@ -1,6 +1,6 @@
 /*!
  * reveal.js
- * http://lab.hakim.se/reveal-js
+ * http://revealjs.com
  * MIT licensed
  *
  * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
@@ -145,6 +145,8 @@
 			hideAddressBar: true,
 
 			// Opens links in an iframe preview overlay
+			// Add `data-preview-link` and `data-preview-link="false"` to customise each link
+			// individually
 			previewLinks: false,
 
 			// Exposes the reveal.js API through window.postMessage
